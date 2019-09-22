@@ -1,0 +1,19 @@
+
+plugins {
+	id 'groovy'
+	id 'application'
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.codehaus.groovy:groovy-all:2.5.8'
+}
+
+run {
+	standardInput = System.in
+}
+
+mainClassName = 'org.xml.unzip.App'
